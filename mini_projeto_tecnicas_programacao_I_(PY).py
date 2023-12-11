@@ -6,7 +6,7 @@ import numpy as np
 
 #%%
 
-## Simula a jogada de dois dados e retorna a soma dos valores
+## Simula a jogada de dois dados e retorna a soma dos resultados
 
 def simulador_dados():
 
@@ -30,7 +30,7 @@ print (f'\n\nSoma: {rodadas.sum()}')
 
 #%%
 
-## Calculo da média, maior e menor lançamento e frequencia de cada lançamento
+## Calcula a média, o maior e menor lançamento e a frequencia de cada lançamento
 
 media = rodadas.mean()
 
@@ -43,6 +43,8 @@ unicos,contagens = np.unique(rodadas, return_counts=True)
 frequencia = dict(zip(unicos,contagens))
 
 #%%
+
+## Apresenta os resultados
 
 print (f'Média: {media}\n\n'
        f'Lançamento máximo: {lancamento_maximo}\n\n'
